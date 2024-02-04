@@ -20,6 +20,10 @@
         modelViewer.addEventListener('load', () => {
             console.log('Model loaded!');
         });
+
+        modelViewer.addEventListener('error', (event) => {
+            console.error('Error loading model:', event.detail);
+        });
     </script>
 </body>
 </html>
